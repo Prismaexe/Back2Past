@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Ajoutez une logique pour choisir dynamiquement la phrase
     var phrases = [
-        { text: "Mhhhh..", author: "@Prisma" },
-        { text: "1.., 2..., 3..., BOOM", author: "@Prisma" },
-        { text: "Merci :)", author: "@Prisma" },
-        { text: "Il pleut aujourd'hui, jouons?", author: "@Prisma" }
+        { text: "Mhhhh..", author: "@ffff" },
+        { text: "1.., 2..., 3..., BOOM", author: "@ffff" },
+        { text: "Merci :)", author: "@ffff" },
+        { text: "Il pleut aujourd'hui, jouons?", author: "@ffff" }
     ];
 
     var randomPhraseIndex = Math.floor(Math.random() * phrases.length);
