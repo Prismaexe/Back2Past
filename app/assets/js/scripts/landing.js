@@ -128,7 +128,7 @@ document.getElementById('launch_button').addEventListener('click', async e => {
 })
 
 // Bind settings button
-document.getElementById('settingsMediaButton').onclick = async e => {
+document.getElementById('optionButton').onclick = async e => {
     await prepareSettings()
     switchView(getCurrentView(), VIEWS.settings)
 }
@@ -149,7 +149,7 @@ function updateSelectedAccount(authUser){
             username = authUser.displayName
         }
         if(authUser.uuid != null){
-            document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-heads.net/body/${authUser.uuid}/right')`
+            document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-heads.net/avatar/${authUser.uuid}/right')`
         }
     }
     user_text.innerHTML = username

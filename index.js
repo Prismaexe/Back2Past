@@ -31,7 +31,7 @@ function initAutoUpdater(event, data) {
         autoUpdater.updateConfigPath = path.join(__dirname, 'dev-app-update.yml')
     }
     if(process.platform === 'darwin'){
-        autoUpdater.autoDownload = false
+        autoUpdater.autoDownload = true
     }
     autoUpdater.on('update-available', (info) => {
         event.sender.send('autoUpdateNotification', 'update-available', info)
@@ -227,8 +227,8 @@ let win
 function createWindow() {
 
     win = new BrowserWindow({
-        width: 980,
-        height: 552,
+        width: 1280,
+        height: 720,
         icon: getPlatformIcon('SealCircle'),
         frame: false,
         webPreferences: {
@@ -254,7 +254,7 @@ function createWindow() {
 
     win.removeMenu()
 
-    win.resizable = true
+    win.resizable = false
 
     win.on('closed', () => {
         win = null
