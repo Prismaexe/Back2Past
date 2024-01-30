@@ -1,3 +1,89 @@
+/* ./assets/css/launcher.css */
+
+#startloadimage {
+    position: absolute;
+    width: 277px;
+    height: auto;
+    top: -270px;
+}
+
+#greetingContainer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+#greetingMessage {
+    font: normal normal bold 19px/29px Poppins;
+    font-size: 18px;
+    top: -10px;
+    
+}
+
+#greetingAuthor {
+    font: normal normal normal 9px/13px Poppins;
+    top: 200px;
+}
+
+
+
+#rectangle {
+    width: 1500px;
+    height: 80px;
+    background-color: #b970e4;
+    margin-top: 275px;
+    border-radius: 5px; /* Ajout des bords arrondis */
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    padding-left: 20px; /* Espacement à gauche pour un meilleur aspect visuel */
+}
+
+#rectangle p {
+    margin: 0; /* Pour enlever les marges par défaut du paragraphe */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Épaissir le texte */
+    font-size: 18px; /* Taille du texte */
+}
+
+@font-face {
+    font-family: 'MinecraftTenVGORe';
+    src: url('../fonts/MinecraftTen-VGORe.ttf') format('truetype');
+}
+
+
+#optionButton {
+    margin-left: auto;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #691b96;
+    cursor: pointer;
+    padding-right: 20px;
+    margin-right: 20px;
+    font-family: 'MinecraftTenVGORe', sans-serif; /* Utilise la police définie */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url('../fonts/Poppins-Regular.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Poppins Bold'), local('Poppins-Bold'), url('../fonts/Poppins-Bold.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* Github Code Highlighting. */
 @import "../../../node_modules/github-syntax-dark/lib/github-dark.css";
 
@@ -2482,7 +2568,7 @@ input:checked + .toggleSwitchSlider:before {
 #landingContainer > #lower {
     height: 23%;
     display: flex;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 #landingContainer > #lower > #left {
     position: relative;
@@ -2970,7 +3056,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* User profile avatar container. */
 #avatarContainer {
-    border-radius: 50%;
+    border-radius: 10%;
     border: 2px solid #cad7e1;
     box-sizing: border-box;
     background: rgba(1, 2, 1, 0.5);
@@ -3001,8 +3087,9 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 10%;
 }
+
 #avatarOverlay:hover,
 #avatarOverlay:focus {
     opacity: 1;
@@ -3389,41 +3476,50 @@ input:checked + .toggleSwitchSlider:before {
 /* Main launch content container. */
 #landingContainer > #lower > #right #launch_content {
     position: relative;
-    top: 25px;
+    top: 70px;
+    left: 250px;
     display: inline-flex;
 }
 
 /* The launch button. */
 #launch_button {
-    background: none;
+    color: #691b96;
+    background: #fff;
     border: none;
+    border-radius: 5%;
     cursor: pointer;
     font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 0px 0px 0px #bebcbb;
-    font-size: 20px;
     padding: 0px;
     transition: 0.25s ease;
     outline: none;
+    padding: 10%;
+    font-family: 'MinecraftTenVGORe', sans-serif; /* Utilise la police définie */
+    font-size: 20px;
 }
 #launch_button:hover,
 #launch_button:focus {
-    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #b970e4;
 }
 #launch_button:active {
-    color: #c7c7c7;
-    text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
+    color: #b970e4;
+    text-shadow: 0px 0px 20px #b970e4, 0px 0px 20px #b970e4;
 }
 #launch_button:disabled {
-    color: #c7c7c7;
+    color: #b970e4;
     cursor: default;
     pointer-events: none;
 }
 
 /* Launch details main container, hidden until launch processing begins. */
 #launch_details {
-    position: relative;
-    top: 25px;
+    border-radius: 5%;
+    padding: 5%;
+    color: #691b96;
+    background-color: #ffffff;
+    position: relafitive;
+    top: 15px;
     display: none;
 }
  
@@ -3434,6 +3530,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Span which displays percentage complete. */
 #launch_progress_label {
+    color: #691b96;
     font-weight: 900;
     letter-spacing: 1px;
     text-shadow: 0px 0px 0px #bebcbb;

@@ -4,6 +4,7 @@
     <title><%= lang('app.title') %></title>
     <script src="./assets/js/scripts/uicore.js"></script>
     <script src="./assets/js/scripts/uibinder.js"></script>
+    <script src="./assets/js/scripts/phras.js"></script>
     <link type="text/css" rel="stylesheet" href="./assets/css/launcher.css">
     <style>
         body {
@@ -25,6 +26,10 @@
             filter: blur(3px) contrast(0.9) brightness(1.0);
         }
     </style>
+
+    
+
+    
 </head>
 <body bkid="<%=bkid%>">
     <%- include('frame') %>
@@ -40,8 +45,10 @@
     <div id="loadingContainer">
         <div id="loadingContent">
             <div id="loadSpinnerContainer">
-                <img id="loadCenterImage" src="assets/images/LoadingSeal.png">
-                <img id="loadSpinnerImage" class="rotating" src="assets/images/LoadingText.png">
+                <!-- La phrase sera ajoutée ici dynamiquement au chargement de la page -->
+                <img id="startloadimage" src="assets/images/LoadingSeal.png">
+                <p id="greetingMessage"></p>
+                <p id="greetingAuthor"></p>
             </div>
         </div>
     </div>
