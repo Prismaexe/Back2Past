@@ -8,15 +8,15 @@ serverStatusPlaceholder = "OFFLINE"
 mojangStatus = "MOJANG STATUS"
 mojangStatusTooltipTitle = "Services"
 mojangStatusNETitle = "Non&nbsp;Essential"
-newsButton = "NEWS"
+newsButton = "NOUVEAUTÉS"
 launchButton = "Lancer"
 launchButtonPlaceholder = "&#8226; No Server Selected"
 launchDetails = "Please wait.."
-newsNavigationStatus = "{currentPage} of {totalPages}"
+newsNavigationStatus = "{currentPage} sur {totalPages}"
 newsErrorLoadSpan = "Checking for News.."
-newsErrorFailedSpan = "Failed to Load News"
-newsErrorRetryButton = "Try Again"
-newsErrorNoneSpan = "No News"
+newsErrorFailedSpan = "UNE ERREUR EST SURVENUE"
+newsErrorRetryButton = "Relancer"
+newsErrorNoneSpan = "Pas de nouveautés"
 
 [ejs.login]
 loginCancelText = "Cancel"
@@ -166,9 +166,9 @@ noSelection = "No Server Selected"
 loading = "Loading.."
 
 [js.landing.serverStatus]
-server = "SERVER"
-offline = "OFFLINE"
-players = "PLAYERS"
+server = "SERVEUR"
+offline = "HORSLIGNE"
+players = "JOUEURS"
 
 [js.landing.systemScan]
 checking = "Vérification des informations système..."
@@ -208,7 +208,7 @@ doneEnjoyServer = "Done. Enjoy the server!"
 checkConsoleForDetails = "Please check the console (CTRL + Shift + i) for more details."
 
 [js.landing.news]
-checking = "Checking for News"
+checking = "recherche des nouveautés"
 
 [js.landing.discord]
 loading = "Loading game.."

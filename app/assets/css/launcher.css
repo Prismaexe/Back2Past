@@ -3297,11 +3297,13 @@ input:checked + .toggleSwitchSlider:before {
 #server_status_wrapper {
     display: inline-flex;
     width: 75px;
+    margin-top: -235px;
+    margin-left: -125px;
 }
 
 /* Span which displays the player count of the selected server. */
 #player_count {
-    color: #949494;
+    color: #691b96;
     font-size: 8px;
     font-weight: 900;
     text-shadow: 0px 0px 20px #949494;
